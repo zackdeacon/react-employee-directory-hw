@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from "react";
+import downArrow from "../icons8-down-arrow-50.png";
+import upArrow from "../icons8-up-50.png";
+
 
 const Table = ({ users }) => {
   const [sortedUsers, updateSortedUsers] = useState([]);
@@ -13,7 +16,7 @@ const Table = ({ users }) => {
           <tr>
             {/* <th scope="col">title</th> */}
             <th
-              scope="col"
+              scope="col" 
               onClick={() => {
                 const usersCopy = [...users];
                 const updateSort = usersCopy.sort((a, b) => {
@@ -30,12 +33,36 @@ const Table = ({ users }) => {
                   return 0;
                 });
 
+                console.log(usersCopy === updateSort);
+
                 updateSortedUsers(updateSort);
               }}
             >
-              First
+            First
             </th>
-            <th scope="col">Last</th>
+            <th scope="col"
+             onClick={() => {
+                            const usersCopy = [...users];
+                            const updateSort = usersCopy.sort((a, b) => {
+                              const nameA = a.name.last;
+                              const nameB = b.name.last;
+            
+                              if (nameA < nameB) {
+                                return -1;
+                              }
+                              if (nameA > nameB) {
+                                return 1;
+                              }
+            
+                              return 0;
+                            });
+            
+                            console.log(usersCopy === updateSort);
+            
+                            updateSortedUsers(updateSort);
+             }}
+            
+            >Last</th>
             {/* <th scope="col">gender</th> */}
             <th scope="col">email</th>
             <th scope="col">phone</th>

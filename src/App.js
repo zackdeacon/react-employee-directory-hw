@@ -16,8 +16,14 @@ function App() {
 
   return (
     <div className="container">
+      <div className="row box">
+        <div className="col-12">
        <h1 className="header-one"> PureCloud Employee Directory</h1>
-       <p className="initial-p">Welcome to the employee directory search page! Please enter the name of an employee that you would like to find!!</p>
+       </div>
+       <div className="col-12">
+       <p className="initial-p">Welcome to the employee directory search page! Please enter the name of an employee that you would like to find!! You can sort first and last name columns by clicking the column headers.</p>
+       </div>
+       </div>
        <FilterInput users={initialUsers} updateUsers={updateUsersToRender} className="filtered-input" />
        <Table users={usersToRender} className="table" />
     </div>
