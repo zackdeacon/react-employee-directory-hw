@@ -48,4 +48,4 @@ Feel free to add to the code as you please.
    https://mighty-savannah-44325.herokuapp.com/
    
    
-   ![desktop homescreen](public/images/readme_img/pure1.png)
+   ![desktop homescreen](Image%208-10-20%20at%208.38%20PM.jpeg)
