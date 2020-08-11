@@ -46,3 +46,6 @@ Feel free to add to the code as you please.
 ## Deployed App
 
    https://mighty-savannah-44325.herokuapp.com/
+   
+   
+   ![desktop homescreen](public/images/readme_img/pure1.png)
